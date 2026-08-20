@@ -41,7 +41,7 @@ export default function Preloader({ onComplete }: { onComplete: () => void }) {
     <AnimatePresence onExitComplete={onComplete}>
       {!done && (
         <motion.div
-          className="grain fixed inset-0 z-[80] flex flex-col items-center justify-center overflow-hidden bg-ink"
+          className="grain fixed inset-0 z-80 flex flex-col items-center justify-center overflow-hidden bg-ink"
           exit={{ clipPath: "inset(0% 0% 100% 0%)" }}
           transition={{ duration: 1.1, ease: [0.83, 0, 0.17, 1] }}
         >
