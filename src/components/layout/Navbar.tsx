@@ -48,7 +48,7 @@ export default function Navbar() {
             : "border-b border-transparent py-6"
         )}
       >
-        <div className="mx-auto flex max-w-[1400px] items-center justify-between px-5 sm:px-8">
+        <div className="mx-auto flex max-w-350 items-center justify-between px-5 sm:px-8">
           {/* Wordmark */}
           <Link
             href="/"
@@ -83,7 +83,7 @@ export default function Navbar() {
               variant="outline"
               magnetic
               onClick={() => goTo("#contact")}
-              className="!px-6 !py-2.5"
+              className="px-6! py-2.5!"
               data-cursor="Enquire"
             >
               Enquire Now
@@ -105,7 +105,7 @@ export default function Navbar() {
       <AnimatePresence>
         {open && (
           <motion.div
-            className="fixed inset-0 z-[70] flex flex-col bg-ink lg:hidden"
+            className="fixed inset-0 z-70 flex flex-col bg-ink lg:hidden"
             initial={{ clipPath: "inset(0% 0% 100% 0%)" }}
             animate={{ clipPath: "inset(0% 0% 0% 0%)" }}
             exit={{ clipPath: "inset(0% 0% 100% 0%)" }}

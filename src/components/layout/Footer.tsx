@@ -20,7 +20,7 @@ export default function Footer() {
 
   return (
     <footer className="relative overflow-hidden border-t border-line bg-ink px-5 pb-10 pt-20 sm:px-8 sm:pt-28">
-      <div className="mx-auto max-w-[1400px]">
+      <div className="mx-auto max-w-350">
         {/* Oversized wordmark */}
         <AnimatedContent direction="up">
           <div className="border-b border-line pb-14">
