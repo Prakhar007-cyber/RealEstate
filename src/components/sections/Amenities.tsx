@@ -37,10 +37,10 @@ export default function Amenities() {
           />
         </motion.div>
       </AnimatePresence>
-      <div className="absolute inset-0 bg-gradient-to-r from-ink via-ink/80 to-ink/30" />
-      <div className="absolute inset-0 bg-gradient-to-t from-ink to-transparent" />
+      <div className="absolute inset-0 bg-linear-to-r from-ink via-ink/80 to-ink/30" />
+      <div className="absolute inset-0 bg-linear-to-t from-ink to-transparent" />
 
-      <div className="relative z-10 mx-auto flex min-h-full max-w-[1400px] flex-col justify-between gap-16 px-5 sm:px-8 lg:flex-row lg:items-center">
+      <div className="relative z-10 mx-auto flex min-h-full max-w-350 flex-col justify-between gap-16 px-5 sm:px-8 lg:flex-row lg:items-center">
         {/* List */}
         <div className="w-full lg:w-1/2">
           <div className="mb-10 flex items-center gap-4">
