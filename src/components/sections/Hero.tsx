@@ -54,7 +54,7 @@ export default function Hero({ start }: { start: boolean }) {
     <section
       ref={ref}
       onMouseMove={onMouseMove}
-      className="grain relative h-[100svh] w-full overflow-hidden bg-ink"
+      className="grain relative h-svh w-full overflow-hidden bg-ink"
     >
       {/* Background image */}
       <motion.div
@@ -80,14 +80,14 @@ export default function Hero({ start }: { start: boolean }) {
 
       {/* Cinematic overlay */}
       <motion.div
-        className="absolute inset-0 bg-gradient-to-b from-ink/60 via-ink/30 to-ink"
+        className="absolute inset-0 bg-linear-to-b from-ink/60 via-ink/30 to-ink"
         style={{ opacity: overlayOpacity }}
       />
-      <div className="absolute inset-0 bg-gradient-to-t from-ink via-transparent to-transparent" />
+      <div className="absolute inset-0 bg-linear-to-t from-ink via-transparent to-transparent" />
 
       {/* Content */}
       <motion.div
-        className="relative z-10 mx-auto flex h-full max-w-[1400px] flex-col justify-end px-5 pb-24 sm:px-8 sm:pb-28"
+        className="relative z-10 mx-auto flex h-full max-w-350 flex-col justify-end px-5 pb-24 sm:px-8 sm:pb-28"
         style={{ y: contentY, opacity: contentOpacity }}
       >
         <motion.p
