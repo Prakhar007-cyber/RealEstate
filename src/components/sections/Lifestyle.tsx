@@ -13,7 +13,7 @@ import SplitText from "@/components/reactbits/SplitText";
  */
 export default function Lifestyle() {
   return (
-    <section className="mx-auto max-w-[1400px] px-5 py-28 sm:px-8 sm:py-40">
+    <section className="mx-auto max-w-350 px-5 py-28 sm:px-8 sm:py-40">
       <div className="mb-20 max-w-2xl">
         <div className="mb-6 flex items-center gap-4">
           <span className="h-px w-12 bg-gold" />
@@ -36,7 +36,7 @@ export default function Lifestyle() {
             >
               {/* Image */}
               <div className={reversed ? "lg:order-2" : ""}>
-                <Reveal className="relative aspect-[4/5] w-full sm:aspect-[5/4]">
+                <Reveal className="relative aspect-4/5 w-full sm:aspect-5/4">
                   <Parallax speed={70} className="h-full w-full">
                     <div className="relative h-[112%] w-full">
                       <Image

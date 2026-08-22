@@ -16,7 +16,7 @@ export default function Intro() {
   return (
     <section
       id="about"
-      className="relative mx-auto max-w-[1400px] px-5 py-28 sm:px-8 sm:py-40"
+      className="relative mx-auto max-w-350 px-5 py-28 sm:px-8 sm:py-40"
     >
       <div className="mb-16 flex items-center gap-4">
         <span className="h-px w-12 bg-gold" />
@@ -34,7 +34,7 @@ export default function Intro() {
         <div className="order-2 lg:order-1">
           <TextReveal
             text="Aurelis was imagined as a quiet counterpoint to the noise of the city — a place where architecture recedes and life expands. Every residence is composed around natural light, generous proportion and an unwavering respect for detail. This is not a building. It is a considered way of living."
-            className="font-serif text-2xl font-light leading-[1.5] text-ivory sm:text-3xl"
+            className="font-serif text-2xl font-light leading-normal text-ivory sm:text-3xl"
           />
 
           <AnimatedContent direction="up" delay={0.1}>
@@ -58,7 +58,7 @@ export default function Intro() {
         </div>
 
         <div className="order-1 lg:order-2">
-          <Reveal className="relative aspect-[3/4] w-full">
+          <Reveal className="relative aspect-3/4 w-full">
             <Parallax speed={80} className="h-full w-full">
               <div className="relative h-[112%] w-full">
                 <Image
