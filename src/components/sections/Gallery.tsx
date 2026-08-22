@@ -50,7 +50,7 @@ export default function Gallery() {
   }, [lightbox, close, next, prev]);
 
   return (
-    <section id="gallery" className="mx-auto max-w-[1500px] px-5 py-28 sm:px-8 sm:py-40">
+    <section id="gallery" className="mx-auto max-w-375 px-5 py-28 sm:px-8 sm:py-40">
       <div className="mb-12 flex flex-col justify-between gap-8 sm:flex-row sm:items-end">
         <div>
           <div className="mb-6 flex items-center gap-4">
@@ -80,7 +80,7 @@ export default function Gallery() {
               {filter === cat && (
                 <motion.span
                   layoutId="tab-pill"
-                  className="absolute inset-0 -z-0 rounded-full bg-gold"
+                  className="absolute inset-0 z-0 rounded-full bg-gold"
                   transition={{ type: "spring", stiffness: 300, damping: 30 }}
                 />
               )}
@@ -94,7 +94,7 @@ export default function Gallery() {
       <LayoutGroup>
         <motion.div
           layout
-          className="grid auto-rows-[160px] grid-cols-2 gap-3 sm:auto-rows-[220px] md:grid-cols-3 lg:grid-cols-4"
+          className="grid auto-rows-40 grid-cols-2 gap-3 sm:auto-rows-55 md:grid-cols-3 lg:grid-cols-4"
         >
           <AnimatePresence mode="popLayout">
             {visible.map((img, i) => (
@@ -133,7 +133,7 @@ export default function Gallery() {
       <AnimatePresence>
         {lightbox !== null && visible[lightbox] && (
           <motion.div
-            className="fixed inset-0 z-[95] flex items-center justify-center bg-ink/95 backdrop-blur-sm"
+            className="fixed inset-0 z-95 flex items-center justify-center bg-ink/95 backdrop-blur-sm"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
