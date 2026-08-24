@@ -18,7 +18,7 @@ export default function Location() {
   const [active, setActive] = useState<string | null>(null);
 
   return (
-    <section id="location" className="mx-auto max-w-[1400px] px-5 py-28 sm:px-8 sm:py-40">
+    <section id="location" className="mx-auto max-w-350 px-5 py-28 sm:px-8 sm:py-40">
       <div className="mb-16 max-w-3xl">
         <div className="mb-6 flex items-center gap-4">
           <span className="h-px w-12 bg-gold" />
@@ -75,7 +75,7 @@ export default function Location() {
 
         {/* Stylised map */}
         <div className="lg:col-span-8">
-          <div className="relative aspect-[4/3] w-full overflow-hidden border border-line bg-ink-soft sm:aspect-[16/10]">
+          <div className="relative aspect-4/3 w-full overflow-hidden border border-line bg-ink-soft sm:aspect-16/10">
             {/* faint grid */}
             <div
               className="absolute inset-0 opacity-[0.12]"
