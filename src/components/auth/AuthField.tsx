@@ -40,7 +40,7 @@ export default function AuthField({
           onChange={(e) => onChange(e.target.value)}
           className={cn(
             "w-full border-b bg-transparent pb-2.5 pr-8 text-ivory placeholder:text-stone-dark focus:outline-none",
-            "[color-scheme:dark] transition-colors",
+            "scheme-dark transition-colors",
             error ? "border-red-400/70" : "border-line focus:border-gold"
           )}
         />

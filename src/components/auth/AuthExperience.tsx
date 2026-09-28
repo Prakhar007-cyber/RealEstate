@@ -44,8 +44,9 @@ export default function AuthExperience({ initialMode }: { initialMode: Mode }) {
     }
   }
 
+  const newLocal = "relative min-h-svh w-full overflow-hidden bg-ink";
   return (
-    <div className="relative min-h-[100svh] w-full overflow-hidden bg-ink">
+    <div className={newLocal}>
       {/* Back to site */}
       <Link
         href="/"
@@ -79,7 +80,7 @@ export default function AuthExperience({ initialMode }: { initialMode: Mode }) {
                 sizes="50vw"
                 className="object-cover"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-ink/80 via-ink/20 to-ink/30" />
+              <div className="absolute inset-0 bg-linear-to-t from-ink/80 via-ink/20 to-ink/30" />
             </motion.div>
           </AnimatePresence>
 
@@ -140,7 +141,7 @@ export default function AuthExperience({ initialMode }: { initialMode: Mode }) {
                 sizes="100vw"
                 className="object-cover"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/40 to-transparent" />
+              <div className="absolute inset-0 bg-linear-to-t from-ink via-ink/40 to-transparent" />
             </motion.div>
           </AnimatePresence>
           <span className="absolute bottom-5 left-5 font-serif text-xl font-light tracking-[0.35em] text-ivory">
